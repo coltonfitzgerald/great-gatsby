@@ -1,0 +1,124 @@
+@import "settings";
+@import "foundation";
+@import "bourbon/bourbon";
+@import "toolkit";
+@import "font-awesome/font-awesome";
+@import "animate";
+
+$black: #242424;
+$grey: #4C4C4C;
+$light-grey: #D8D8D8;
+
+$okiku: "DK Okiku", Arial, Helvetica, sans-serif;
+$freight-sans: "Freight Sans Pro", Helvetica, Arial, sans-serif;
+
+@font-face {
+	font-family: "DK Okiku";
+	src: url('../fonts/dk-okiku.otf');
+}
+
+body {
+	font-family: $freight-sans;
+}
+
+header {
+	background-image: url('../img/background.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 80vh;
+	div {
+		position: relative;
+		background: rgba(0,0,0,.52);
+		width: 448px;
+		height: 448px;
+		border-radius: 100%;
+		@include center;
+		p {
+			text-align: center;
+			color: white;
+			@include font-size(82px);
+			line-height: 100px;
+			padding-top: .8em;
+			font-family:$okiku;
+		}
+	}
+}
+
+b > i {
+	display: block;
+	margin-bottom: 1em;
+}
+
+.header {
+	background: $black;
+	h2 {
+		padding: 1rem;
+		margin: 0;
+		color: white;
+		text-transform: uppercase;
+		@include font-size(48px);
+		font-family: $okiku;
+	}
+}
+
+dl {
+	dd {
+		a {
+			text-transform: uppercase;
+			color: white!important;
+			background: $grey!important;
+			@include font-size(24px);
+			font-family: $okiku!important;
+			letter-spacing: 2px!important;
+		}
+	}
+}
+
+div.content {
+	background: $light-grey!important;
+}
+
+// Add space for Font Awesome Icons
+.fa {
+	padding-right: .5em;
+}
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
